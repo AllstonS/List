@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Living Life!</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="stylesheet.scss">
+  <script type="html/template" id="itemTmpl">
+
+  <header data-listid="<%= _id %>">
+  <button class="deleteItem">Delete</button> | <button class="showEditList">Edit</button>
+  <form class="editList" action="">
+  <div class="form-group">
+  <input type="text" class="form-control" name="editTitle" value="<%= title %>">
+  </div>
+  <button type="submit" class="btn btn-primary">Edit List</button>
+  </form>
+  </header>
+  </script>
+</head>
+<body>
+  <header>
+    <div class="jumbotron">
+      <h1 class="text-center">Get 'Er Done!</h1>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <section class="col-md-8">
+        <form id="createItem" action="">
+          <div class="form-group">
+            <input type="text" class="form-control" name="newTitle">
+          </div>
+          <button type="submit" class="btn btn-primary">Add Item</button>
+        </form>
+      </section>
+    </div>
+    <footer></footer>
+
+
+
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>
